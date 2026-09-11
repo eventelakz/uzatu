@@ -1459,3 +1459,288 @@ Therefore the paper cannot get trapped under a triangle.
   }
 
 }
+/* =========================
+   EVENTELA FINAL BRAND
+========================== */
+
+.eventela-final {
+  position: relative;
+  min-height: 100vh;
+  padding: 100px 24px 60px;
+  background: #3b2027;
+  color: #f8eee5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* Decorative ornament */
+
+.eventela-ornament {
+  width: min(320px, 80vw);
+  margin-bottom: 35px;
+  opacity: 0.8;
+}
+
+.eventela-ornament svg {
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+
+.eventela-ornament path {
+  fill: none;
+  stroke: #c9a66b;
+  stroke-width: 1.2;
+  stroke-linecap: round;
+  stroke-dasharray: 600;
+  stroke-dashoffset: 600;
+  animation: ornamentDraw 2.5s ease forwards;
+}
+
+@keyframes ornamentDraw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* Small title */
+
+.eventela-small {
+  margin: 0 0 18px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: #c9a66b;
+}
+
+/* Logo */
+
+.eventela-logo {
+  margin: 0;
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(48px, 13vw, 82px);
+  line-height: 0.9;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: #f8eee5;
+}
+
+.eventela-logo span {
+  color: #c9a66b;
+}
+
+/* Description */
+
+.eventela-description {
+  margin: 28px 0 26px;
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(20px, 5vw, 27px);
+  line-height: 1.35;
+  font-weight: 400;
+  color: #f3e4d7;
+}
+
+/* Services */
+
+.eventela-services {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  max-width: 500px;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 8px;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  line-height: 1.8;
+  color: #d7c3ad;
+}
+
+.eventela-services i {
+  font-style: normal;
+  color: #c9a66b;
+  font-size: 11px;
+}
+
+/* Divider */
+
+.eventela-line {
+  width: min(260px, 65vw);
+  height: 1px;
+  margin: 38px 0 32px;
+  background: rgba(201, 166, 107, 0.45);
+}
+
+/* Contact title */
+
+.eventela-contact-title {
+  margin: 0 0 25px;
+
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(23px, 5.5vw, 31px);
+  line-height: 1.25;
+  font-weight: 400;
+
+  color: #f8eee5;
+}
+
+/* WhatsApp button */
+
+.eventela-whatsapp {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+
+  width: min(340px, 90vw);
+  min-height: 68px;
+  padding: 13px 22px;
+
+  border: 1px solid rgba(201, 166, 107, 0.7);
+  border-radius: 2px;
+
+  color: #f8eee5;
+  text-decoration: none;
+
+  transition:
+    background 0.35s ease,
+    border-color 0.35s ease,
+    transform 0.35s ease;
+}
+
+.eventela-whatsapp:hover {
+  background: rgba(201, 166, 107, 0.12);
+  border-color: #c9a66b;
+  transform: translateY(-2px);
+}
+
+.eventela-whatsapp:active {
+  transform: translateY(0);
+}
+
+/* WhatsApp icon */
+
+.whatsapp-icon {
+  width: 30px;
+  height: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #c9a66b;
+  border-radius: 50%;
+
+  color: #c9a66b;
+  font-size: 15px;
+}
+
+/* Button text */
+
+.eventela-whatsapp > span:last-child {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  line-height: 1.3;
+}
+
+.eventela-whatsapp small {
+  font-size: 8px;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  color: #cdb9a5;
+}
+
+/* Bottom branding */
+
+.eventela-instagram {
+  margin: 55px 0 0;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 9px;
+  font-weight: 500;
+  letter-spacing: 0.28em;
+
+  color: #c9a66b;
+}
+
+/* Mobile */
+
+@media (max-width: 480px) {
+
+  .eventela-final {
+    min-height: 100svh;
+    padding: 80px 20px 45px;
+  }
+
+  .eventela-ornament {
+    margin-bottom: 28px;
+  }
+
+  .eventela-small {
+    font-size: 8px;
+    letter-spacing: 0.25em;
+  }
+
+  .eventela-logo {
+    font-size: 54px;
+  }
+
+  .eventela-description {
+    font-size: 21px;
+    margin-top: 24px;
+  }
+
+  .eventela-services {
+    font-size: 7px;
+    gap: 6px;
+  }
+
+  .eventela-line {
+    margin: 32px 0 27px;
+  }
+
+  .eventela-contact-title {
+    font-size: 23px;
+  }
+
+  .eventela-whatsapp {
+    width: 100%;
+    max-width: 330px;
+  }
+
+  .eventela-whatsapp > span:last-child {
+    font-size: 8px;
+  }
+
+  .eventela-instagram {
+    margin-top: 45px;
+  }
+}
+
+/* Accessibility */
+
+@media (prefers-reduced-motion: reduce) {
+  .eventela-ornament path {
+    animation: none;
+    stroke-dashoffset: 0;
+  }
+
+  .eventela-whatsapp {
+    transition: none;
+  }
+}
